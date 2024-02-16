@@ -15,8 +15,11 @@ import Day from './Day'
 // }
 
 export default class Weather extends React.Component {
+    componentWillUnmount() {
+        console.log('Weather is unmounted')
+    }
     render() {
-        console.log('rendered')
+        // console.log('rendered')
         // console.log(this.props)
         const {
             temperature_2m_max: max,
